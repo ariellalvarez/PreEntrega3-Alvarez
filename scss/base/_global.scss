@@ -1,0 +1,54 @@
+*{padding: 0;
+    margin: 0;
+    }
+
+header{
+    @extend %estilo1;
+    background-color: $bg-header;
+    nav{
+        .header__navbar{
+            @extend %estilo1;
+            background-color: rgb(82, 88, 95);
+        
+        }
+    }}
+
+main{
+    background-color:$bg-main;
+    font-family: $font-main;
+    h1{
+        color: map-get($titulos, mcolor);
+        border: solid 2px goldenrod;
+        font-family: $font-h1;
+        font-weight: 700;
+        text-align: map-get($titulos, mtext-align);
+        padding: 10px;
+        background-color: $bg-h1;}
+
+    h2{
+        color: map-get($titulos, mcolor);
+        font-family: $font-h2;
+        font-weight: 400;
+        text-align: map-get($titulos, mtext-align);
+        padding: 10px 0px;}
+
+
+}
+
+footer{
+
+    @include pieDePagina ($bg-footer,$font-footer,700,10px);
+
+   
+
+    .footer__map{
+        max-width: 300px;
+        max-height: 300px;
+    }
+    
+    .footer__links{
+        @extend %estilo1;
+        list-style: none;
+        
+    }
+    }

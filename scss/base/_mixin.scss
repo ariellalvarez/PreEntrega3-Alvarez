@@ -1,0 +1,7 @@
+@mixin pieDePagina ($bg, $ff, $fw, $pd) {
+    background-color: $bg;
+    font-family: $ff;
+    font-weight: $fw;
+    padding: $pd;
+
+}
